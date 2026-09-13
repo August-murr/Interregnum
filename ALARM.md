@@ -4,9 +4,7 @@ ___
 Project Draft written with Astsra.
 
 ## Summary
-The release of GPT-6-Astra came with rumours and concerns over its recurrent transformer architecture and OpenAI's plans to move toward Latent Reasoning architectures without COT, which renders COT monitoring obsolete. The only alternative is Activation Monitoring. I wrote this draft to address those concerns. It's called ALARM (Automated Latent Activation Research for Monitoring). The full draft I wrote with the help of Astra is at this link:
-
-Here's the summary:
+The release of GPT-6-Astra came with rumours and concerns over its recurrent transformer architecture and OpenAI's plans to move toward Latent Reasoning architectures without COT, which renders COT monitoring obsolete. The only alternative is Activation Monitoring. I wrote this draft to address those concerns. It's called ALARM (Automated Latent Activation Research for Monitoring).
 
 This project aims to develop an activation monitoring system that predicts, detects, and prevents misaligned actions, like reward hacking, using an autonomous safety researcher that optimizes the monitoring system based on accuracy, latency, and cost.
 
