@@ -6,6 +6,16 @@ These systems may process huge amounts of experiment data, choose which ideas to
 
 I call this **meta-alignment**: aligning the systems that carry out and guide alignment research.
 
+## Securing RSI
+
+One concern with recursive self-improvement (RSI) is the human in the loop. Human oversight can slow development and severely bottleneck each iteration. If RSI without human oversight is restricted or banned, this bottleneck could become a hard limit.
+
+Meta-alignment could partially mitigate this problem by making automated oversight more trustworthy. I believe a sufficiently meta-aligned autonomous alignment research (AAR) system could eventually allow us to remove humans from parts of the loop.
+
+However, recursive self-improvement could also make a system better at evading the AAR system and its monitors. The reviewer would therefore need to be integrated into the improvement loop and improve alongside the system’s capabilities.
+
+We would need to decide how much compute to allocate to capability improvement and how much to alignment and oversight—and whether that ratio should change as the system develops.
+
 ## Measuring Meta-Alignment
 
 One way to measure part of meta-alignment is to compare an autonomous reviewer's judgments with those of human experts.
@@ -49,4 +59,38 @@ This could involve iterative feedback and gradual updates, resembling RLHF.
 Any method that depends on humans risks bottlenecking exploration, even when humans are not directly in the loop. Human time is limited, and human judgments can constrain which ideas get explored.
 
 In a perfect world, we could trust autonomous alignment researchers to explore freely, without depending on human oversight or being limited by our biases and understanding. But this is not a perfect world. It is a misaligned one.
+
+## Self-Play
+
+### Internal
+
+The system has two separate parts, each with its own harness: an **Explorer** and a **Reviewer**.
+
+Perhaps we could train these parts against each other to improve the Reviewer. The Explorer would deliberately attempt to scheme, cheat, and evade detection. The Reviewer would try to detect and flag these attempts and steer the Explorer back toward legitimate research.
+
+Only the Reviewer from this training setup would be used in the research system. The evasive Explorer would be replaced with a regular Explorer.
+
+The hypothesis is that a Reviewer trained against an Explorer actively learning to evade it could become better at reviewing an ordinary Explorer. We would still need to test whether those improvements transfer beyond its training opponent.
+
+### External
+
+The AAR system could specialize in evaluating other models and AI systems—for example, stress testing and red teaming a newly developed model before public release.
+
+If it becomes capable at this work, perhaps it could also evaluate itself, or a separate copy of itself.
+
+This would provide another source of feedback, although copies could share the same blind spots. Agreement between them would not, by itself, establish safety.
+
+### Self-Improvement
+
+Earlier, when discussing optimization using human expert evaluations, I mainly meant having an autonomous ML researcher improve the Reviewer against that benchmark. My concern was that this could encourage reward hacking.
+
+An alternative would resemble RSI: use the AAR system itself to improve, optimize, and train its next generation, then repeat the process.
+
+In capability-focused RSI, the hope is that a more intelligent system becomes better at developing an even more intelligent successor. Could a similar process apply to alignment? Could a more aligned and capable AAR system become better at developing an even more aligned successor?
+
+This would require improving both its ability to detect misalignment and its reliability in pursuing alignment. A better evaluator is not automatically a more aligned researcher.
+
+Could we initiate an **alignment explosion**?
+
+Or would each generation simply become better at scheming, evading oversight, and appearing aligned?
 
