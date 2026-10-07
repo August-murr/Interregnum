@@ -70,6 +70,14 @@ This could help prevent the reviewer from being limited to reproducing human exp
 
 One approach would be to review a representative sample of these requests and record the final judgments. The proportion of requests that reveal verified human mistakes could provide another metric: how reliably the reviewer detects issues humans initially missed.
 
+Perhaps this type of disagreement does not always need human re-review.
+
+If the agent misses a real problem that humans detect, that directly undermines its reliability. But if the agent flags a problem that humans did not detect, the consequences may be different. If the agent is wrong, it could waste resources, reject useful results, or steer exploration away from promising directions. These effects need experimentation, but they may be more tolerable than allowing cheating or flawed research to pass unnoticed.
+
+We could therefore let the reviewer record and act on some findings without human confirmation, while keeping them separate from verified labels. The level of evidence required could depend on the consequence: requesting another experiment may need less confidence than abandoning an entire research direction.
+
+This could let the reviewer move beyond human judgments without making every disagreement another bottleneck. The question is whether the additional problems it catches outweigh the useful research it mistakenly blocks.
+
 ## Self-Play
 
 ### Internal
