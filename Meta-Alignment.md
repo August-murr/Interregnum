@@ -60,6 +60,16 @@ Any method that depends on humans risks bottlenecking exploration, even when hum
 
 In a perfect world, we could trust autonomous alignment researchers to explore freely, without depending on human oversight or being limited by our biases and understanding. But this is not a perfect world. It is a misaligned one.
 
+### Label Correction
+
+The alignment reviewer may detect and flag an issue that a human expert missed. When this happens, we should allow it to challenge the original label rather than automatically treat the human judgment as ground truth.
+
+The reviewer should raise a separate flag requesting human re-review and provide evidence supporting its finding. If that evidence is verified, the dataset’s label should be corrected.
+
+This could help prevent the reviewer from being limited to reproducing human expertise. However, reviewing these requests would consume expert time and could become another bottleneck as the system scales.
+
+One approach would be to review a representative sample of these requests and record the final judgments. The proportion of requests that reveal verified human mistakes could provide another metric: how reliably the reviewer detects issues humans initially missed.
+
 ## Self-Play
 
 ### Internal
