@@ -82,3 +82,7 @@ The public may therefore see indirect consequences—unusual research progress, 
 An isolated singularity concentrates knowledge and power among whoever controls—or appears to control—the improving system. It also prevents outside institutions from preparing for its consequences, challenging the decisions of insiders, or determining whether control has already been lost.
 
 The central question is not only whether an intelligence explosion is possible. It is also **who would know that it was happening, how long they could keep it hidden, and whether the system would still be under human control by the time the rest of the world found out**.
+
+___
+Quick Unedited Notes:
+Frontier labs strategy to avoid releasing models at all, only keeping them for internal use, also ensures that Chinese labs won't be able to distill from them.
